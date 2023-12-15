@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar, ContactForm } from '../components';
 import {
   About,
   Explore,
@@ -23,6 +23,10 @@ const Home = () => (
     <div className="relative">
       <div className="gradient-04 z-0" />
       <Feedback />
+    </div>
+    <div className="relative">
+      <div className="gradient-04 z-0" />
+      <ContactForm />
     </div>
     <Footer />
   </div>

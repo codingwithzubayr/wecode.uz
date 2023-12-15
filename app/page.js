@@ -1,4 +1,8 @@
-import { Footer, Navbar } from '../components';
+import React from 'react';
+import firebase from 'firebase/app';
+import 'firebase/database';
+import firebaseConfig from '../firebaseconfig';
+import { Footer, Navbar, ContactForm } from '../components';
 import {
   About,
   Explore,
@@ -6,6 +10,8 @@ import {
   GetStarted,
   Hero,
 } from '../sections';
+
+firebase.initializeApp(firebaseConfig);
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -23,6 +29,10 @@ const Page = () => (
     <div className="relative">
       <div className="gradient-04 z-0" />
       <Feedback />
+    </div>
+    <div className="relative">
+      <div className="gradient-04 z-0" />
+      <ContactForm />
     </div>
     <Footer />
   </div>

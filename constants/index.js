@@ -43,15 +43,7 @@ export const socials = [
     url: '/twitter.svg',
   },
   {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-  },
-  {
     name: 'instagram',
     url: '/instagram.svg',
-  },
-  {
-    name: 'facebook',
-    url: '/facebook.svg',
   },
 ];
