@@ -9,65 +9,32 @@ export const exploreWorlds = [
     id: 'world-2',
     imgUrl: '/planet-02.png',
     title: 'Looki',
-    link: 'https://looki-org.vercel.app/', 
+    link: 'https://looki-org.vercel.app/',
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
     title: 'Kadirojo Permai',
+    link: 'https://sushiman-tau.vercel.app/',
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
     title: 'Paradise Island',
+    link: 'https://sushiman-tau.vercel.app/',
   },
   {
     id: 'world-5',
     imgUrl: '/planet-05.png',
     title: 'Hawkins Labs',
+    link: 'https://sushiman-tau.vercel.app/',
   },
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
-];
-
-export const newFeatures = [
-  {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
-    subtitle:
-        'we have the latest update with new world for you to try never mind',
-  },
-  {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
-    subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
-  },
-  {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
-    subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
-  },
-  {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
-    subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
-  },
+  'В разделе "Свяжитесь с нами" отправьте нам электронное письмо или позвоните по указанным номерам.',
+  'Выберите дизайн веб-сайта, который соответствует вашему стилю и бизнес-требованиям. У нас есть варианты для каждого вкуса и цели.',
+  'Как только вы выбрали свой дизайн, наша команда приступит к работе. Ожидайте получить ваш выдающийся веб-сайт в кратчайшие сроки.',
 ];
 
 export const socials = [
