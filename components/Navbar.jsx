@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import { socials } from '../constants';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
@@ -16,19 +16,20 @@ const Navbar = () => (
     <div
       className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
     >
-      <img
-        src="/search.svg"
-        alt="search"
-        className="w-[24px] h-[24px] object-contain"
-      />
+       <a className="font-bold text-[24px] mr-[7px] text-white navbarContact" href="tel:+998995261636">+998 99 526 16 36</a>
       <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
         WECODE.UZ
       </h2>
-      <img
-        src="/menu.svg"
-        alt="menu"
-        className="w-[24px] h-[24px] object-contain"
-      />
+      <div className="flex gap-4">
+            {socials.map((social) => (
+              <img
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[40px] h-[40px] object-contain cursor-pointer contactMedia"
+              />
+            ))}
+          </div>
     </div>
   </motion.nav>
 );

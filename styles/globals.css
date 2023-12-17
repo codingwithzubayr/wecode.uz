@@ -105,3 +105,152 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+/* styles.css */
+
+/* src/styles.css */
+
+.contactHeader {
+  color: #3498db;
+}
+
+.contactForm {
+  width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.contactLabel {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.contactInput {
+  width: 450px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  
+}
+
+.contactButton {
+  width: 100%;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.contactButton:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .contactImage {
+    display: none;
+  }
+
+  .navbarContact{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactLabel,
+  .contactButton {
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 400px;
+  }
+
+  .contactInput{
+    width: 100%;
+  }
+
+  .contactHeader
+  {
+    font-size: 40px;
+  }
+  .contactButton
+  {
+    font-size: 1.2rem;
+    padding: 20px 50px;
+  }
+
+  .contactInfo {
+    display: none;
+    margin-top: 0px;
+  }
+
+  .contactHeading {
+    margin-bottom: 0px;
+  }
+
+ 
+
+}
+
+@media (max-width: 450px) {
+  .contactLabel,
+  .contactButton {
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 350px;
+  }
+
+  .contactInput{
+    width: 100%;
+  }
+
+  .contactHeader
+  {
+    font-size: 35px;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .contactLabel,
+  .contactButton {
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 320px;
+  }
+
+  .contactMedia {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contactInput{
+    width: 100%;
+  }
+
+  .contactHeader
+  {
+    font-size: 35px;
+  }
+
+  .contactButton
+  {
+    font-size: 1.3rem;
+  }
+
+}
+

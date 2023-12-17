@@ -1,12 +1,41 @@
 'use client';
 
+import React, { useState } from 'react';
+import axios from 'axios';
+
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
-const Feedback = () => (
-  <section className={`${styles.paddings}`}>
+const Feedback = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handlePut = async () => {
+    try {
+      // Save form data to Firebase Realtime Database using axios
+      await axios.post('https://wecode-b3371-default-rtdb.firebaseio.com//contact.json', formData);
+      console.log('Data saved to Firebase:', formData);
+    } catch (error) {
+      console.error('Error saving data to Firebase:', error);
+    }
+  };
+
+  return (
+    <section className={`${styles.paddings}`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -16,37 +45,73 @@ const Feedback = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+        className="flex-[0.5] lg:max-w-[500px] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
         <div className="feedback-gradient" />
         <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Samantha
+          <h4 className="font-bold sm:text-[40px] text-[26px] sm:leading-[40.32px] mb-[40px] leading-[40.32px] text-white contactHeading">
+            Вы интересуетесь нашими услугами?
           </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Metaverus
+          <p className="mt-[8px] font-normal sm:text-[30px] text-[30px] sm:leading-[35.68px] leading-[35.68px] text-white contactInfo">
+            Оставьте вводную информацию, и мы начнем сотрудничество.
           </p>
+          <img className="contactImage" src="/stamp.png" alt="Contact Us" />
         </div>
-
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, metaverse is very
-          useful for today's work, or can be called web 3.0. by using
-          metaverse you can use it as anything”
-        </p>
       </motion.div>
 
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-        />
+        <div className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]">
+          <h1 className="flex justify-center items-center text-[50px] mb-[30px] text-white font-bold contactHeader">
+            Cвязаться с нами
+          </h1>
+          <form className="mx-auto flex lg:flex-row flex-col gap-6 justify-center flex-wrap contactForm">
+            <label className="text-[25px] text-white font-bold contactLabel">
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="text-black contactInput"
+          />
+        </label>
+        <br />
+        <label className="text-[25px] text-white font-bold contactLabel">
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="text-black contactInput"
+          />
+        </label>
+        <br />
+        <label className="text-[25px] text-white font-bold contactLabel">
+          Phone:
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="text-black contactInput"
+          />
+        </label>
+        <br />
+        {/* Add a submit button */}
+        <button className="text-[25px] text-white font-bold contactButton" type="button" onClick={handlePut}>
+          Send
+        </button>
+      </form>
+    </div>
       </motion.div>
     </motion.div>
   </section>
-);
+
+  )
+};
 
 export default Feedback;
