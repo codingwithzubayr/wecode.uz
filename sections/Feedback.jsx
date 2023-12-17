@@ -9,7 +9,6 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const Feedback = () => {
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,82 +35,80 @@ const Feedback = () => {
 
   return (
     <section className={`${styles.paddings}`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
-    >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[500px] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
       >
-        <div className="feedback-gradient" />
-        <div>
-          <h4 className="font-bold sm:text-[40px] text-[26px] sm:leading-[40.32px] mb-[40px] leading-[40.32px] text-white contactHeading">
-            Вы интересуетесь нашими услугами?
-          </h4>
-          <p className="mt-[8px] font-normal sm:text-[30px] text-[30px] sm:leading-[35.68px] leading-[35.68px] text-white contactInfo">
-            Оставьте вводную информацию, и мы начнем сотрудничество.
-          </p>
-          <img className="contactImage" src="/stamp.png" alt="Contact Us" />
-        </div>
-      </motion.div>
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.2, 1)}
+          className="flex-[0.5] lg:max-w-[500px] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+        >
+          <div className="feedback-gradient" />
+          <div>
+            <h4 className="font-bold sm:text-[40px] text-[26px] sm:leading-[40.32px] mb-[40px] leading-[40.32px] text-white contactHeading">
+              Вы интересуетесь нашими услугами?
+            </h4>
+            <p className="mt-[8px] font-normal sm:text-[30px] text-[30px] sm:leading-[35.68px] leading-[35.68px]   text-white contactInfo">
+              Оставьте вводную информацию, и мы начнем сотрудничество.
+            </p>
+            <img className="contactImage" src="/stamp.png" alt="Contact Us" />
+          </div>
+        </motion.div>
 
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="relative flex-1 flex justify-center items-center"
-      >
-        <div className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]">
-          <h1 className="flex justify-center items-center text-[50px] mb-[30px] text-white font-bold contactHeader">
-            Cвязаться с нами
-          </h1>
-          <form className="mx-auto flex lg:flex-row flex-col gap-6 justify-center flex-wrap contactForm">
-            <label className="text-[25px] text-white font-bold contactLabel">
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="text-black contactInput"
-          />
-        </label>
-        <br />
-        <label className="text-[25px] text-white font-bold contactLabel">
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="text-black contactInput"
-          />
-        </label>
-        <br />
-        <label className="text-[25px] text-white font-bold contactLabel">
-          Phone:
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="text-black contactInput"
-          />
-        </label>
-        <br />
-        {/* Add a submit button */}
-        <button className="text-[25px] text-white font-bold contactButton" type="button" onClick={handlePut}>
-          Send
-        </button>
-      </form>
-    </div>
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.2, 1)}
+          className="relative flex-1 flex justify-center items-center"
+        >
+          <div className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]">
+            <h1 className="flex justify-center items-center text-[50px] mb-[30px] text-white font-bold contactHeader">
+              Cвязаться с нами
+            </h1>
+            <form className="mx-auto flex lg:flex-row flex-col gap-6 justify-center flex-wrap contactForm">
+              <label className="text-[25px] text-white font-bold contactLabel">
+                Name:
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="text-black contactInput"
+                />
+              </label>
+              <br />
+              <label className="text-[25px] text-white font-bold contactLabel">
+                Email:
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="text-black contactInput"
+                />
+              </label>
+              <br />
+              <label className="text-[25px] text-white font-bold contactLabel">
+                Phone:
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="text-black contactInput"
+                />
+              </label>
+              <br />
+              <button className="text-[25px] text-white font-bold contactButton" type="button" onClick={handlePut}>
+                Send
+              </button>
+            </form>
+          </div>
+        </motion.div>
       </motion.div>
-    </motion.div>
-  </section>
-
-  )
+    </section>
+  );
 };
 
 export default Feedback;

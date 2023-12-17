@@ -16,20 +16,20 @@ const Navbar = () => (
     <div
       className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
     >
-       <a className="font-bold text-[24px] mr-[7px] text-white navbarContact" href="tel:+998995261636">+998 99 526 16 36</a>
+      <a className="font-bold text-[24px] mr-[7px] text-white navbarContact" href="tel:+998995261636">+998 99 526 16 36</a>
       <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
         WECODE.UZ
       </h2>
       <div className="flex gap-4">
-            {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[40px] h-[40px] object-contain cursor-pointer contactMedia"
-              />
-            ))}
-          </div>
+        {socials.map((social) => (
+          <img
+            key={social.name}
+            src={social.url}
+            alt={social.name}
+            className="w-[40px] h-[40px] object-contain cursor-pointer contactMedia"
+          />
+        ))}
+      </div>
     </div>
   </motion.nav>
 );
