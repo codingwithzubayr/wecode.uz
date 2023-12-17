@@ -33,15 +33,10 @@ const Feedback = () => {
 
   return (
     <section className={`${styles.paddings}`}>
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+      <div
         className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
       >
-        <motion.div
-          variants={fadeIn('right', 'tween', 0.2, 1)}
+        <div
           className="flex-[0.5] lg:max-w-[500px] flex justify-start flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
         >
           <div className="feedback-gradient" />
@@ -54,10 +49,9 @@ const Feedback = () => {
             </p>
             <img className="contactImage" src="/stamp.png" alt="Contact Us" />
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={fadeIn('left', 'tween', 0.2, 1)}
+        <div
           className="relative flex-1 flex justify-center items-center"
         >
           <div className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]">
@@ -103,8 +97,8 @@ const Feedback = () => {
               </button>
             </form>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
