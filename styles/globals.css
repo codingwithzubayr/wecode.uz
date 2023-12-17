@@ -147,7 +147,9 @@
   transition: background-color 0.3s ease;
 }
 
-
+.exploreTitle{
+  border: 2px solid #2980b9;
+}
 .contactButton:hover {
   background-color: #2980b9;
 }

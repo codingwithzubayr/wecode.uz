@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
-import { motion } from 'framer-motion';
-
 import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
-
 const Feedback = () => {
   const [formData, setFormData] = useState({
     name: '',
