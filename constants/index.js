@@ -14,19 +14,19 @@ export const exploreWorlds = [
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    title: 'Sushiman',
     link: 'https://sushiman-tau.vercel.app/',
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
-    link: 'https://sushiman-tau.vercel.app/',
+    title: 'Looki',
+    link: 'https://looki-org.vercel.app/',
   },
   {
     id: 'world-5',
     imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    title: 'Sushiman',
     link: 'https://sushiman-tau.vercel.app/',
   },
 ];
