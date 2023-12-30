@@ -22,13 +22,15 @@ const Footer = () => (
           <div className="flex gap-4">
             <a className="font-bold text-[24px] mr-[7px] text-white" href="tel:+998995261636">+998 99 526 16 36</a>
             {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer mt-[7px]"
-              />
-            ))}
+          <a href={social.link}>
+            <img
+            key={social.name}
+            src={social.url}
+            alt={social.name}
+            className="w-[40px] h-[40px] object-contain cursor-pointer contactMedia"
+          />
+          </a>          
+        ))}
           </div>
         </div>
       </div>

@@ -13,9 +13,9 @@ export const exploreWorlds = [
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Sushiman',
-    link: 'https://sushiman-tau.vercel.app/',
+    imgUrl: '/project.PNG',
+    title: 'Ecommerce',
+    link: 'https://example-ecommerce-umber.vercel.app/',
   },
   {
     id: 'world-4',
@@ -41,9 +41,11 @@ export const socials = [
   {
     name: 'twitter',
     url: '/twitter.svg',
+    link: 'https://t.me/wecodeuz', 
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
+    link: 'https://www.instagram.com/wecode.uz',
   },
 ];

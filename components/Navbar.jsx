@@ -20,12 +20,14 @@ const Navbar = () => (
       </h2>
       <div className="flex gap-4">
         {socials.map((social) => (
-          <img
+          <a href={social.link}>
+            <img
             key={social.name}
             src={social.url}
             alt={social.name}
             className="w-[40px] h-[40px] object-contain cursor-pointer contactMedia"
           />
+          </a>          
         ))}
       </div>
     </div>
