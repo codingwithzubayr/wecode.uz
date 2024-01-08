@@ -13,7 +13,7 @@ const GetStarted = () => (
         className="flex-[0.75] flex justify-center flex-col "
       >
         <TypingText title="| Как работает WeCode.uz" />
-        <TitleText title={<>Начните всего несколькими кликами.</>} />
+        <TitleText title={<>Start with just a few clicks.</>} />
         <div className="mx-auto flex lg:flex-row flex-col gap-8 flex-wrap mt-[50px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps

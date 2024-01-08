@@ -37,10 +37,10 @@ const Feedback = () => {
           <div className="feedback-gradient" />
           <div>
             <h4 className="font-bold sm:text-[40px] text-[26px] sm:leading-[40.32px] mb-[40px] leading-[40.32px] text-white contactHeading">
-              Вы интересуетесь нашими услугами?
+            Are you interested in our services?
             </h4>
             <p className="mt-[8px] font-normal sm:text-[30px] text-[30px] sm:leading-[35.68px] leading-[35.68px]   text-white contactInfo">
-              Оставьте вводную информацию, и мы начнем сотрудничество.
+            Provide introductory information, and we will start our collaboration.
             </p>
             <img className="contactImage" src="/stamp.png" alt="Contact Us" />
           </div>
@@ -51,7 +51,7 @@ const Feedback = () => {
         >
           <div className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]">
             <h1 className="flex justify-center items-center text-[50px] mb-[30px] text-white font-bold contactHeader">
-              Cвязаться с нами
+            Contact Us
             </h1>
             <form className="mx-auto flex lg:flex-row flex-col gap-6 justify-center flex-wrap contactForm">
               <label className="text-[25px] text-white font-bold contactLabel">

@@ -32,9 +32,9 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'В разделе "Свяжитесь с нами" отправьте нам электронное письмо или позвоните по указанным номерам.',
-  'Выберите дизайн веб-сайта, который соответствует вашему стилю и бизнес-требованиям. У нас есть варианты для каждого вкуса и цели.',
-  'Как только вы выбрали свой дизайн, наша команда приступит к работе. Ожидайте получить ваш выдающийся веб-сайт в кратчайшие сроки.',
+  'In the "Contact Us" section, send us an email, we will contact with you as soon as we receive your email',
+  'Choose a website design that matches your style and business requirements. We have options for every taste and goal.',
+  'Once you have selected your design, our team will get to work. Expect to receive your outstanding website in no time.',  
 ];
 
 export const socials = [

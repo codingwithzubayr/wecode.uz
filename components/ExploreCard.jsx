@@ -32,7 +32,7 @@ const ExploreCard = ({ id, imgUrl, title, index, link, active, handleClick }) =>
           </a>
         </div>
         <p className="font-normal text-[16px] leading-[20.16px] text-black uppercase">
-          войти в проект
+        To enter the project
         </p>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-black">
           {title}

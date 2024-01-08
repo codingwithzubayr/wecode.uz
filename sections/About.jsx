@@ -14,15 +14,15 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| О wecode.uz" textStyles="text-center" />
+      <TypingText title="| About wecode.en" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        Добро пожаловать на <span className="font-extrabold text-white">wecode.uz</span> – ваш партнер в мире веб-разработки! Мы предоставляем широкий спектр услуг по созданию веб-сайтов для предпринимателей и клиентов, с фокусом на индивидуальных потребностях и ваших целях.{' '}
-        Давайте{' '}
-        <span className="font-extrabold text-white">изучим</span> проекты <span className="font-extrabold text-white">wecode.uz</span>, прокручивая вниз.
+        Добро пожаловать на <span className="font-extrabold text-white">wecode.uz</span> – Welcome to wecode.uz – your partner in the world of web development! We offer a wide range of services for entrepreneurs and clients in the creation of websites, with a focus on individual needs and your goals.{' '}
+        Let's{' '}
+        <span className="font-extrabold text-white">explore</span> the projects on <span className="font-extrabold text-white">wecode.en</span>,  by scrolling down.
       </motion.p>
 
       <motion.img
