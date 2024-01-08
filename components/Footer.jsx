@@ -13,10 +13,10 @@ const Footer = () => (
 
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">
-            wecode.en
+            wecode.uz
           </h4>
           <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2024 - 2025 wecode.en. All rights reserved.
+            Авторское право © 2023 - 2024 wecode.uz. Все права защищены.
           </p>
 
           <div className="flex gap-4">

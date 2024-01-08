@@ -16,7 +16,7 @@ const Navbar = () => (
     >
       <a className="font-bold text-[24px] mr-[7px] text-white navbarContact" href="tel:+998995261636">+998 99 526 16 36</a>
       <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-        WECODE.EN
+        WECODE.UZ
       </h2>
       <div className="flex gap-4">
         {socials.map((social) => (
