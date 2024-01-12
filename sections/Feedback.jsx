@@ -20,7 +20,7 @@ const Feedback = () => {
     try {
       // Save form data to Firebase Realtime Database using axios
       await axios.post('https://wecode-b3371-default-rtdb.firebaseio.com//contact.json', formData);
-      console.log('Data saved to Firebase:', formData);
+      alert('Rahmat, Biz siz bilan tez orada bog`lanamiz')
     } catch (error) {
       console.error('Error saving data to Firebase:', error);
     }
