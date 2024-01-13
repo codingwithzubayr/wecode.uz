@@ -20,14 +20,14 @@ export const exploreWorlds = [
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Real Estate',
-    link: 'https://estate.100jsprojects.com/',
+    title: 'Ecommerce Store',
+    link: 'https://example-ecommerce-umber.vercel.app/',
   },
   {
     id: 'world-5',
     imgUrl: '/planet-05.png',
-    title: 'X-beat store',
-    link: 'https://x-beat.netlify.app/',
+    title: 'Looki Admin',
+    link: 'https://looki-org.vercel.app/',
   },
 ];
 
